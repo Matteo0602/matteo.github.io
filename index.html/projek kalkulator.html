@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Kalkulator</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+    
+</script>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('calculator')">Kalkulator</a></li>
+            <li><a href="#" onclick="showSection('about')">Tentangku</a></li>
+            <li><a href="#" onclick="showSection('contact')">Kontak</a></li>
+        </ul>
+    </nav>
+
+
+    <div id="calculator" class="section">
+        <h1>Kalkulator Guweh</h1>
+        <input type="text" id="display" disabled />
+        <div class="buttons">
+
+            <button onclick="append('+')">+</button>
+            <button onclick="append('-')">-</button>
+            <button onclick="append('*')">*</button>
+            <button onclick="append('/')">/</button>
+            <button onclick="append('7')">7</button>
+            <button onclick="append('8')">8</button>
+            <button onclick="append('9')">9</button>
+            <button onclick="clearDisplay()">C</button>
+            <button onclick="append('4')">4</button>
+            <button onclick="append('5')">5</button>
+            <button onclick="append('6')">6</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="append('1')">1</button>
+            <button onclick="append('2')">2</button>
+            <button onclick="append('3')">3</button>
+            <button onclick="append('0')">0</button>
+            <button onclick="append('(')">(</button>
+            <button onclick="append(')')">)</button>
+
+        </div>
+    </div>
+
+
+    <div id="about" class="section" style="display: none;">
+
+        <div class="about-box tentang">
+            <h1>Tentangku</h1>
+            <ul>
+
+                <li>Hai nama saya Matteo Magantha Mapaliey</li>
+                <li>Saya berasal dari SMAN 1 TANA TORAJA</li>
+                <li>Saya lahir di tanggal 06 Februari 2008 dan yap saya sekarang berusia 17thn</li>
+                <li>Dan ini adalah proyek Kalkulatorku</li>
+
+            </ul>
+        </div>
+
+        <div class="about-box hobi">
+            <h2>Hobiku</h2>
+
+            <ul>
+
+                <li>Saya suka bermain game</li>
+                <li>Saya juga suka nonton anime</li>
+                <li>Terkadang saya membaca manga atau manhwa</li>
+                <li>Terkadang juga menggambar</li>
+
+            </ul>
+        </div>
+
+        <div class="about-box alasan">
+            <h3>Alasan Saya Membuat Kalkulator</h3>
+            <ul>
+
+                <li>Saya masih belum terlalu bisa untuk membuat proyek yang lebih susah</li>
+                <li>Saya menganggap proyek kalkulator jauh lebih mudah dibanding game</li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div id="contact" class="section" style="display: none;">
+
+        <h1>Kontak Saya</h1>
+        <p>IG: @Konozuki190</p>
+        <p>WA: 0823-1956-4171</p>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
